@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+header {
+    background-color: #fff3e7;
+    height: 100px;
+    padding: 0 70px;
+}
+
+.header-left, .header-right {
+    display: inline-block;
+}
+
+.header-left {
+    width: 300px;
+}
+
+.title {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.title-img {
+    height: 100px;
+}
+
+.title-txt {
+    width: 70%;
+    height: 90px;
+}
+
+.big-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right li {
+    padding: 0 15px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: black;
+}
+
+#sp-header-right {
+    display: none;
+}
+
+.header-right ul {
+    display: flex;
+}
+
+.header-right p {
+    line-height: 100px;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* top */
+.top {
+    height: calc(100vh - 200px);
+    background-image: url("../img/test.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.top-message {
+    color: white;
+    width: 80%;
+    text-align: center;
+
+}
+
+.top-message h1 {
+    border-bottom: 4px solid white;
+    font-size: 3rem;
+}
+
+/* main */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: #fff3e7 ;
+}
+
+/* concept */
+
+.category-box {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.category-title {
+    text-align: center;
+}
+
+.category-title h2 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 0 10px;
+    margin-bottom: 70px;
+}
+
+.category-title p {
+    font-size: 2.5rem;
+    padding: 0 0 0 40px;
+}
+
+.concept-content {
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+}
+
+.concept-img, .concept-txt {
+    width: 50%;
+}
+
+.concept-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.concept-img img {
+    width: 60%;
+}
+
+.concept-txt {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.concept-content h3 {
+    padding: 0 30px;
+}
+
+/* gallery */
+.gallery-img {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: calc(90vw*0.9);
+}
+
+.gallery-img img {
+    width: 25%;
+    height: 25%;
+}
+
+/* service */
+.service-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-content-box {
+    width: 30%;
+}
+
+.service-content-img {
+    display: flex;
+    width: 100%;
+    height: calc(90vw*0.27);
+    justify-content: center;
+    align-items: top;
+}
+
+.service-content-img img{
+    width: 100%;
+}
+
+.service-content-txt {
+    text-align: center;
+}
+
+.service-content-txt h3 {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 2rem;
+}
+
+.service-content-txt p {
+     font-size: 1.7rem;
+}
+
+/* contact */
+.contact-map {
+    width: 100%;
+    text-align: center;
+}
+.contact-map iframe{
+    width: 70%;
+    height: calc(90vw*0.4);
+}
+
+/* footer */
+footer {
+    background-color: #fff3e7;
+    height: 350px;
+    display: flex;
+    padding: 30px 5%;
+}
+
+.footer-left {
+    width: 25%;
+    position: relative;
+}
+
+.footer-center {
+    width: 50%;
+}
+
+.footer-right {
+    width: 25%;
+}
+
+.title .big-title{
+    font-size: 1.5rem;
+}
+
+.title-img img {
+    height: 100px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.sp-copyright {
+    display: none;
+}
+
+.footer-center {
+    font-size: 1.1rem;
+}
+
+.footer-right li {
+    height: 70px;
+    text-align: right;
+}
+
+.footer-right p {
+    line-height: 70px;
+    font-size: 2rem;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-right i {
+    line-height: 70px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.special-txt-style {
+    font-family: "Oswald";
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 5%;
+        width: 90%;
+        position: relative;
+    }
+    
+    .header-right {
+        display: none;
+    }
+
+    #sp-header-right.active {
+        display: block;
+        animation: fadeIn 0.7s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    }
+
+    #sp-header-right {
+        height: calc(100vh - 200px);
+        width: 100vw;
+        background-color: #fff3e7;
+        position: relative;
+        right: 19.5px;
+        bottom: 6px;
+    }
+
+    #sp-header-right ul {
+        width: 100%;
+        text-align: right;
+        padding: 40px 0;
+    }
+
+    #sp-header-right li {
+        font-size: 1.5rem;
+        padding: 15px 20px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .openbtn1{
+        position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+        background:#fff3e7 ;
+        cursor: pointer;
+          width: 50px;
+          height:50px;
+        border-radius: 5px;
+      }
+      
+      /*ボタン内側*/
+      .openbtn1 span{
+          display: inline-block;
+          transition: all .4s;/*アニメーションの設定*/
+          position: absolute;
+          left: 14px;
+          height: 3px;
+          border-radius: 2px;
+          background: black;
+          width: 45%;
+        }
+      
+      .openbtn1 span:nth-of-type(1) {
+        top:15px; 
+      }
+      
+      .openbtn1 span:nth-of-type(2) {
+        top:23px;
+      }
+      
+      .openbtn1 span:nth-of-type(3) {
+        top:31px;
+      }
+      
+      /*activeクラスが付与されると線が回転して×に*/
+      
+      .openbtn1.active span:nth-of-type(1) {
+          top: 18px;
+          left: 18px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 30%;
+      }
+      
+      .openbtn1.active span:nth-of-type(2) {
+        opacity: 0;/*真ん中の線は透過*/
+      }
+      
+      .openbtn1.active span:nth-of-type(3){
+          top: 30px;
+          left: 18px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30%;
+      }
+
+      .category-title p {
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+      }
+
+      .concept-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .concept-img {
+        order: 2;
+      }
+
+      .concept-txt {
+        order: 1;
+        width: 100%;
+      }
+
+      .service-content {
+        flex-direction: column;
+      }
+
+      .service-content-box {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      .contact-map iframe {
+        width: 100%;
+        height: 70vw;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+      }
+
+      .footer-left, .footer-center {
+        width: 80%;
+      }
+
+      .footer-left {
+        height: 150px;
+      }
+
+      .footer-center {
+        height: 350px;
+        position: relative;
+      }
+
+      .footer-right {
+        display: none;
+      }
+
+      .copyright {
+        display: none;
+      }
+
+      .sp-copyright {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+      }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
